@@ -2,6 +2,18 @@
 
 ### Week3 Area Species Curve
 
+#### Rplot-Result-Forest.png	
+
+#### Rplot-forest.png	
+
+#### Rplot-grass.png	
+
+#### Rplot01-Result-Grass.png	
+
+#### area-species curve-forest.R
+
+#### area-species curve-grass.R
+
 ### Week4 IVI 計算
 
 #### 0311_team3-forest .csv
