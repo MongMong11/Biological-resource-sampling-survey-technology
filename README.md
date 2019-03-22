@@ -49,3 +49,6 @@
 * Do:優勢度
 * RDo:相對優勢度
 * ivi: ivi指數
+
+#### ivi_calaulate.R
+* the process of the ivi's calculation.
