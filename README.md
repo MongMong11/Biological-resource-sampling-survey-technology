@@ -50,5 +50,11 @@
 * RDo:相對優勢度
 * ivi: ivi指數
 
+#### ivi_result_data
+* count:總數目
+* Basal_area總胸徑面積
+* ivi: ivi指數
+
 #### ivi_calaulate.R
 * the process of the ivi's calculation.
+
