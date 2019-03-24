@@ -35,19 +35,11 @@ Den<-count/4
 RD<-Den/sum(Den)*100
 
 # Dominance
-Do<-((data[,4])/2)^2*3.14/100
-Do<-c(sum(Do[c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,25)]),
-sum(Do[c(20)]),
-sum(Do[c(21,32)]),
-sum(Do[c(22)]),
-sum(Do[c(23,26)]),
-sum(Do[c(24)]),
-sum(Do[c(27)]),
-sum(Do[c(28)]),
-sum(Do[29]),
-sum(Do[30]),
-sum(Do[31]),
-sum(Do[33]))
+
+Cover_Area<-((data[,4])/2)^2*3.14/100
+cbind(data, Cover_Area)
+data<-as.data.table(data)
+Do<-data[,.(Cover_Area.sum = sum(Cover_Area)),by=Species]
 RDo<-Do/sum(Do)*100
 
 # frequency
