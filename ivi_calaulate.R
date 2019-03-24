@@ -4,7 +4,7 @@ data <- data.table::fread(team3_forest, encoding = 'UTF-8')
 data<-data.frame(data)
 data
 
-# cauculate specie's number - step 2
+# cauculate specie's number - step 1
 
 left = function(text, num_char) {
   substr(text, 1, num_char)
@@ -19,15 +19,18 @@ DataTreeID
 
 name<-unique(data[,3])
 
+#loop
 i=1
-while (i<13) {
-  print(as.numeric(length(grep(name[i],DataTreeID))))
+c=c()
+while (i<19) {
+  a<-as.numeric(length(grep(name[i],DataTreeID)))
+  c<-append(c,a)
+  print(c)
   i=i+1
 }
 
-# result
-
-count<-as.numeric(c(16,1,2,1,2,1,1,1,1,1,1,1))
+#result
+count<-c
 Den<-count/4
 RD<-Den/sum(Den)*100
 
@@ -56,7 +59,8 @@ RF<-Fr/sum(Fr)*100
 # ivi
 ivi<-RF+RDo+RD
 sum(ivi)
-# output
+
+# make data.frame
 
 ivi_data<-cbind(name, count, Den, RD, Fr, RF, Do, RDo, ivi)
 ivi_data<-as.data.frame(ivi_data)
