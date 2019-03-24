@@ -3,16 +3,22 @@
 ### Week3 Area Species Curve
 
 #### Rplot-Result-Forest.png	
+森林最小面積曲線和10%增加率直線切線示意圖
 
 #### Rplot-forest.png	
+森林最小面積曲線
 
 #### Rplot-grass.png	
+草地最小面積曲線
 
 #### Rplot01-Result-Grass.png	
+草地最小面積曲線和10%增加率直線切線示意圖
 
 #### area-species curve-forest.R
+使用R繪製森林最小面積曲線和切線全過程
 
 #### area-species curve-grass.R
+使用R繪製草地最小面積曲線和切線全過程
 
 ### Week4 IVI 計算
 
