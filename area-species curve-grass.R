@@ -1,4 +1,4 @@
-#
+#Rplot-grass.png
 m_grass <- read.table(header = TRUE, text = "
 Area SC
 25 16
