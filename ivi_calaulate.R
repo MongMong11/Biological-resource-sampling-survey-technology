@@ -62,6 +62,20 @@ ivi_data<-cbind(name, count, Den, RD, Fr, RF, Do, RDo, ivi)
 ivi_data<-as.data.frame(ivi_data)
 View(ivi_data)
 
+#output
 write.csv(ivi_data, 'C:/Users/user/Desktop/ivi_data.csv', row.names = FALSE)
 
+# calculate DBH class number
+data<-as.data.table(data)
+
+DBH_S<-data[,.(DBH.1 = DBH <= 3 ),by=Species]
+DBH_S<-as.data.table(DBH_S)
+DBH_S<-DBH_S[DBH.1 %in% c("TRUE")]
+as.data.frame(DBH_S)
+DBH_S<-table(DBH_S)
+DBH_S
+
+DBH_L<-data[,.(DBH.3= DBH>10),by=Species]
+DBH_L<-as.data.table(DBH_L)
+DBH_L<-DBH_L[DBH.3 %in% c("TRUE")]
 
