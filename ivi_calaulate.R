@@ -31,7 +31,7 @@ while (i<13) {
   i=i+1
 }
 
-#result
+#Den, RD result
 
 count<-c
 Den<-count/4
